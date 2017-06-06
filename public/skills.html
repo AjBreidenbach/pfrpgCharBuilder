@@ -1,0 +1,613 @@
+<div class="container-fluid">
+    <h1>Character Skills</h1>
+    <hr>
+    <div class="row">
+        <div class="col-lg-4">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Total</th>
+                        <th>Ranks</th>
+                        <th>Class bns</th>
+                        <th>Misc mod</th>
+                        <th>Class skill</th>
+                        <th>Ability mod</th>
+                        <th>Specialty</th>
+                        <th>Armor check</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Acrobatics</th>
+                        <td><input type="number" class="form-control width-60" id="tot-acrobatics" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-acrobatics"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-acrobatics"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-acrobatics"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-acrobatics">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-acrobatics"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-acrobatics"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-acrobatics" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Appraise</th>
+                        <td><input type="number" class="form-control width-60" id="tot-appraise" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-appraise"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-appraise"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-appraise"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-appraise">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-appraise"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-appraise"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-appraise" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Bluff</th>
+                        <td><input type="number" class="form-control width-60" id="tot-bluff" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-bluff"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-bluff"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-bluff"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-bluff">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-bluff"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-bluff"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-bluff" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Climb</th>
+                        <td><input type="number" class="form-control width-60" id="tot-climb" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-climb"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-climb"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-climb"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-climb">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-climb"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-climb"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-climb" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Craft</th>
+                        <td><input type="number" class="form-control width-60" id="tot-craft" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-craft"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-craft"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-craft"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-craft">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-craft"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-craft"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-craft" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Diplomacy</th>
+                        <td><input type="number" class="form-control width-60" id="tot-diplomacy" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-diplomacy"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-diplomacy"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-diplomacy"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-diplomacy">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-diplomacy"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-diplomacy"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-diplomacy" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Disable device</th>
+                        <td><input type="number" class="form-control width-60" id="tot-disable-device" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-disable-device"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-disable-device"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-disable-device"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-disable-device">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-disable-device"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-disable-device"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-disable-device" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Disguise</th>
+                        <td><input type="number" class="form-control width-60" id="tot-disguise" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-disguise"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-disguise"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-disguise"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-disguise">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-disguise"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-disguise"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-disguise" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Escape artist</th>
+                        <td><input type="number" class="form-control width-60" id="tot-escape-artist" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-escape-artist"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-escape-artist"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-escape-artist"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-escape-artist">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-escape-artist"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-escape-artist"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-escape-artist" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Fly</th>
+                        <td><input type="number" class="form-control width-60" id="tot-fly" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-fly"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-fly"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-fly"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-fly">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-fly"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-fly"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-fly" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Handle animal</th>
+                        <td><input type="number" class="form-control width-60" id="tot-handle-animal" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-handle-animal"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-handle-animal"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-handle-animal"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-handle-animal">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-handle-animal"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-handle-animal"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-handle-animal" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Heal</th>
+                        <td><input type="number" class="form-control width-60" id="tot-heal" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-heal"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-heal"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-heal"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-heal">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-heal"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-heal"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-heal" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Intimidate</th>
+                        <td><input type="number" class="form-control width-60" id="tot-intimidate" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-intimidate"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-intimidate"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-intimidate"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-intimidate">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-intimidate"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-intimidate"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-intimidate" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Knowledge</th>
+                        <td><input type="number" class="form-control width-60" id="tot-knowledge1" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-knowledge1"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-knowledge1"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-knowledge1"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-knowledge1">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-knowledge1"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-knowledge1"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-knowledge1" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Knowledge</th>
+                        <td><input type="number" class="form-control width-60" id="tot-knowledge2" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-knowledge2"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-knowledge2"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-knowledge2"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-knowledge2">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-knowledge2"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-knowledge2"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-knowledge2" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Knowledge</th>
+                        <td><input type="number" class="form-control width-60" id="tot-knowledge3" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-knowledge3"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-knowledge3"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-knowledge3"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-knowledge3">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-knowledge3"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-knowledge3"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-knowledge3" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Linguistics</th>
+                        <td><input type="number" class="form-control width-60" id="tot-linguistics" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-linguistics"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-linguistics"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-linguistics"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-linguistics">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-linguistics"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-linguistics"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-linguistics" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Perception</th>
+                        <td><input type="number" class="form-control width-60" id="tot-perception" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-perception"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-perception"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-perception"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-perception">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-perception"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-perception"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-perception" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Perform</th>
+                        <td><input type="number" class="form-control width-60" id="tot-perform" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-perform"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-perform"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-perform"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-perform">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-perform"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-perform"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-perform" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Profession</th>
+                        <td><input type="number" class="form-control width-60" id="tot-profession" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-profession"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-profession"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-profession"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-profession">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-profession"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-profession"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-profession" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Ride</th>
+                        <td><input type="number" class="form-control width-60" id="tot-ride" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-ride"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-ride"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-ride"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-ride">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-ride"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-ride"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-ride" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Sense motive</th>
+                        <td><input type="number" class="form-control width-60" id="tot-sense-motive" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-sense-motive"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-sense-motive"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-sense-motive"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-sense-motive">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-sense-motive"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-sense-motive"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-sense-motive" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Sleight of hand</th>
+                        <td><input type="number" class="form-control width-60" id="tot-sleight-of-hand" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-sleight-of-hand"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-sleight-of-hand"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-sleight-of-hand"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-sleight-of-hand">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-sleight-of-hand"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-sleight-of-hand"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-sleight-of-hand" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Spellcraft</th>
+                        <td><input type="number" class="form-control width-60" id="tot-spellcraft" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-spellcraft"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-spellcraft"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-spellcraft"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-spellcraft">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-spellcraft"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-spellcraft"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-spellcraft" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Stealth</th>
+                        <td><input type="number" class="form-control width-60" id="tot-stealth" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-stealth"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-stealth"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-stealth"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-stealth">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-stealth"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-stealth"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-stealth" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Survival</th>
+                        <td><input type="number" class="form-control width-60" id="tot-survival" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-survival"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-survival"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-survival"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-survival">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-survival"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-survival"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-survival" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Swim</th>
+                        <td><input type="number" class="form-control width-60" id="tot-swim" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-swim"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-swim"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-swim"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-swim">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-swim"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-swim"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-swim" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Use magic device</th>
+                        <td><input type="number" class="form-control width-60" id="tot-use-magic" disabled></td>
+                        <td><input type="number" class="form-control width-60" min="0" id="ranks-use-magic"></td>
+                        <td><input type="number" class="form-control width-60" id="class-bns-use-magic"></td>
+                        <td><input type="number" class="form-control width-60" id="misc-mod-use-magic"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-class-skill-use-magic">
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="form-control width-60" disabled id="ability-mod-use-magic"></td>
+                        <td><input type="text" class="form-control width-150" id="specialty-use-magic"></td>
+                        <td>
+                            <select class="form-control width-100" id="is-armor-pen-use-magic" disabled>
+                                <option>FALSE</option>
+                                <option>TRUE</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

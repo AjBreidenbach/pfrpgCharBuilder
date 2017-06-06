@@ -1,0 +1,49 @@
+<div class="container-fluid">
+<h1>Character Status</h1>
+<hr>
+    <div class="row">
+        <div class="col-lg-4">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Base Hp</th>
+                        <th>Con</th>
+                        <th colspan="3">Adjustments</th>
+                        <th>Temp</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td><input type="number" class="form-control width-60" value = "0" id="base-hp" disabled></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="con-hp" disabled></td>
+                        <td><input type="number" class="form-control width-50" value = "0" id="hp-adjust-1" ></td>
+                        <td><input type="number" class="form-control width-50" value = "0" id="hp-adjust-2"></td>
+                        <td><input type="number" class="form-control width-50" value = "0" id="hp-adjust-3"></td>
+                        <td><input type="number" class="form-control width-50" value = "0" min="0" id="temp-hp"></td>
+                        <td><input type="number" class="form-control width-60" value = "0" min="0" id="tot-hp" disabled></td>
+                    </tr>
+            </table>
+            <table class="table table-hover">
+                    <tr>
+                        <th>Action:</th>
+                        <td><input type="number" class="form-control width-60" value="0" min="0" id="hp-buffer"></td>
+                        <td colspan="2"><button class="btn btn-danger" id="dmg-btn">Take Damage</button></td>
+                        <td colspan="2"><button class="btn btn-success" id="heal-btn">Heal Damage</button></td>
+                        <td colspan="2"><button class="btn btn-warning" id="non-lethal-btn">Nonlethal</button></td>
+                    </tr>
+                    <tr> 
+                        <th>Remaining:</th>
+                        <td><input type="number" class="form-control width-60" value="0" id="hp-remaining" disabled></td>
+                        <td colspan="2"><button class="btn btn-primary" id="daily-rest-btn">Daily Rest</button></td>
+                        <td colspan="3"><button class="btn btn-info" id="hp-clear-btn">Clear</button></td>
+                    </tr>
+                    <tr>
+                        <th>Non-lethal:</th>
+                        <td><input type="number" class="form-control width-60" value="0" id="non-lethal" disabled></td>
+                        <td colspan="5"><button class="btn btn-primary" id="recover-btn">Recover (1hr)</button></td>
+                    </tr>
+            </table>
+            <hr>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+.detail-group
+{
+    width: 150px;
+    text-align: left;
+}
+.details-control
+{
+    min-width: 200px;
+}
+.width-50{
+    width: 50px;
+    min-width: 50px;
+}
+.width-60{
+    width: 60px;
+    min-width: 60px;
+}
+.width-75{
+    width: 75px;
+    min-width: 75px;
+}
+
+.width-85{
+    width: 85px;
+    min-width: 85px;
+}
+
+.width-100{
+    width: 100px;
+    min-width: 100px;
+}
+
+.width-150{
+    width: 150px;
+    min-width: 150px;
+}
+
+.width-300{
+    width: 300px;
+    min-width: 300px;
+}
+
+.init-hidden{
+    display:none;
+}
+
+body {
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+
+#page-content-wrapper{
+    opacity: .95;
+  }
+
+.clear{
+    background-color: Transparent;
+    border:none;
+    outline:none;
+    overflow:hidden;
+    cursor: pointer;
+}

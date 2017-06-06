@@ -1,0 +1,74 @@
+<div class="container-fluid">
+    <h1>Character Equipment</h1>
+    <hr>
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>Ac Items</h2>
+            <table class="table table-hover" id="ac-items-table">
+                <thead>
+                    <tr>
+                        <th>Ac items</th>
+                        <th>Bonus</th>
+                        <th>Type</th>
+                        <th>Check pen</th>
+                        <th>Spell failure (%)</th>
+                        <th>Weight</th>
+                        <th>Properties</th>
+                    </tr>
+                </thead>
+                <tbody id="ac-items">
+                    <tr>
+                        <th> <input type="text" class="form-control width-150"></th>
+                        <td> <input type="number" class="form-control width-60"></td>
+                        <td>
+                            <select class="form-control width-100">
+                                <option>Armor</option>
+                                <option>Shield</option>
+                            </select>
+                        </td>
+                        <td> <input type="number" class="form-control width-60"></td>
+                        <td><input type="number" class="form-control width-75"></td>
+                        <td> <input type="number" class="form-control width-60"></td>
+                        <td> <input type="text" class="form-control width-150"></td>
+                    </tr>
+                </tbody>
+                <tr>
+                    <td id="last-row" colspan ="8">
+                        <button class="btn btn-primary btn-large" id="add-attack"><span class="glyphicon glyphicon-plus-sign"></span></button>
+                        <button class="btn btn-danger btn-large" id="remove-attack"><span class="glyphicon glyphicon-minus-sign"></span></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div class = "row">
+        <div class="col-lg-4">
+            <h2>Gear</h2>
+            <table class="table table-hover" id="equipment-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Weight</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="gear">
+                    <tr>
+                        <th> <input type="text" class="form-control width-150"></th>
+                        <td> <input type="number" class="form-control width-60"></td>
+                        <td> <input type="text" class="form-control width-300"></td>
+                    </tr>
+                </tbody>
+                <tr>
+                    <td id="last-row" colspan ="8">
+                        <button class="btn btn-primary btn-large" id="add-attack"><span class="glyphicon glyphicon-plus-sign"></span></button>
+                        <button class="btn btn-danger btn-large" id="remove-attack"><span class="glyphicon glyphicon-minus-sign"></span></button>
+                    </td>
+                </tr>
+            </table>
+
+            <hr>
+        </div>
+    </div>
+</div>

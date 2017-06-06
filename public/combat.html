@@ -1,0 +1,72 @@
+<div class="container-fluid">
+<h1>Character Combat</h1>
+<hr>
+    <div class="row">
+        <div class="col-lg-4">
+            <h2>Attacks</h2>
+            <table class="table table-hover" id="attacks-table">
+                <thead>
+                    <tr>
+                        <th>Attack</th>
+                        <th>Attack bns</th>
+                        <th>Crti rng</th>
+                        <th>Type</th>
+                        <th>Range</th>
+                        <th>Ammo</th>
+                        <th>Damage</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody id="attacks">
+                </tbody>
+                    <tr>
+                        <td id="last-row" colspan ="8">
+                            <button class="btn btn-primary btn-large" id="add-attack"><span class="glyphicon glyphicon-plus-sign"></span></button>
+                            <button class="btn btn-danger btn-large" id="remove-attack"><span class="glyphicon glyphicon-minus-sign"></span></button>
+                        </td>
+                    </tr>
+            </table>
+            <hr>
+            <h2>Combat attributes</h2>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Total</th>
+                        <th>Base</th>
+                        <th colspan="3">Adjustments</th>
+                        <th>Temp</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <th>Initiative</th>
+                        <td><input type="number" class="form-control width-60" value = "0" id="init-tot" disabled></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="init-base" disabled></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="init-adjust-1" ></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="init-adjust-2"></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="init-adjust-3"></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="init-temp"></td>
+                    </tr>
+                    <tr>
+                        <th>CMB</th>
+                        <td><input type="number" class="form-control width-60" value = "0" id="cmb-tot" disabled></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="cmb-base" disabled></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="cmb-adjust-1" ></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="cmb-adjust-2"></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="cmb-adjust-3"></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="cmb-temp"></td>
+                    </tr>
+                   <tr>
+                        <th>CMD</th>
+                        <td><input type="number" class="form-control width-60" value = "0" id="cmd-tot" disabled></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="cmd-base" disabled></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="cmd-adjust-1" ></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="cmd-adjust-2"></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="cmd-adjust-3"></td>
+                        <td><input type="number" class="form-control width-60" value = "0" id="cmd-temp"></td>
+                    </tr>
+           </table>
+
+        </div>
+    </div>
+</div>
